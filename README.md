@@ -18,7 +18,7 @@
 >
 > Please check https://food-calories-counter.herokuapp.com get familiar with application itself.
 >
-> ![Screenshot](counter/static/img/demo.png)
+> ![Screenshot](counter/static/img/page.png)
 
 ## Tools
 - front-end
@@ -83,6 +83,8 @@ To be able to run code analysis, please execute command below:
 
 ### Release notes
 
+* 0.1.2
+  * Add metainfo into home page
 * 0.1.0
   * Introduce PYPI package
 

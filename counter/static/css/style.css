@@ -27,3 +27,13 @@ th, td {
 .bold {
   font-weight: bold;
 }
+
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin: 10px;
+}

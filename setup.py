@@ -16,13 +16,10 @@ def _requirements() -> Sequence[str]:
 
 setup(
     name="calorie-counter",
-    version="0.1.0",
+    version="0.1.2",
     author="Volodymyr Yahello",
     author_email="vyahello@gmail.com",
-    description=(
-        "This project represents simple web app to calculate calories based on given food type. "
-        "Please check https://food-calories-counter.herokuapp.com get familiar with application itself."
-    ),
+    description="This project represents simple web app to calculate calories based on given food type.",
     long_description=_description(),
     long_description_content_type="text/markdown",
     url="https://github.com/vyahello/calorie-counter",

@@ -55,7 +55,7 @@ function recalculateTotal() {
 
 
 function updateTotalKcal() {
-    // write the total kcal count into  the total id, if 0 hide the
+    // write the total kcal count into the total id, if 0 hide the
     // foodBalanceWrapper div
     let sum = recalculateTotal();
     document.getElementById("total").innerHTML = parseInt(sum);
@@ -71,7 +71,7 @@ function updateTotalKcal() {
 
 function emptyFoodPicker() {
     // reset the foodPicker ID value
-    document.getElementById("foodPicker").value = '';
+    document.getElementById("foodPicker").value = String();
 }
 
 function removeRow() {
@@ -91,7 +91,7 @@ function updateFoodLog() {
     selectedFood = selectedFood.substr(0, selectedFood.lastIndexOf("(")).trim();
     let kcals = foodDb[selectedFood];
 
-    if(kcals === undefined){
+    if(kcals === undefined) {
       alert('Unknown food, please try again');
       emptyFoodPicker();
       return;
