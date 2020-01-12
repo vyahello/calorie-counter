@@ -1,0 +1,3 @@
+graft counter/static
+graft counter/templates
+global-exclude *.pyc

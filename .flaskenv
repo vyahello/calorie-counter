@@ -1,4 +1,4 @@
-FLASK_APP=counter/__main__.py
+FLASK_APP=counter.py
 FLASK_RUN_HOST=0.0.0.0
 FLASK_RUN_PORT=5003
 FLASK_ENV=production

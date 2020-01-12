@@ -15,6 +15,7 @@
 
 # Calorie counter
 > This project represents simple web app to calculate calories based on given food type. 
+>
 > Please check https://food-calories-counter.herokuapp.com get familiar with application itself.
 >
 > ![Screenshot](counter/static/img/demo.png)
