@@ -3,8 +3,8 @@
     cursor: default;
     border: 1px solid #ccc;
     border-top: 0;
-    background: #ffffff;
-    box-shadow: -1px 1px 3px rgba(0, 0, 0, .1);
+    background: #fff;
+    box-shadow: -1px 1px 3px rgba(0,0,0,.1);
 
     /* core styles should not be changed */
     position: absolute;
@@ -16,7 +16,8 @@
     box-sizing: border-box;
 }
 
-.autocomplete-suggestions {
+
+.autocomplete-suggestion {
     position: relative;
     padding: 0 .6em;
     line-height: 23px;
@@ -27,11 +28,14 @@
     color: #333;
 }
 
-.autocomplete-suggestions b {
+
+.autocomplete-suggestion b {
     font-weight: normal;
     color: #1f8dd6;
+
 }
 
-.autocomplete-suggestions.selected {
+
+.autocomplete-suggestion.selected {
     background: #f0f0f0;
 }

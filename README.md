@@ -15,6 +15,8 @@
 
 # Calorie counter
 > This project represents simple web app to calculate calories based on given food type.
+>
+> ![Screenshot](counter/static/img/demo.png)
 
 ## Tools
 - front-end
@@ -45,6 +47,7 @@ easyrun(bind=Bind("0.0.0.0:5003"), debug=True)
 Running on https://0.0.0.0:5003 (CTRL + C to quit)
 ...
 ```
+Then please open [localhost:5003/](http://localhost:5003/) endpoint.
 
 ### Source code
 
@@ -54,6 +57,7 @@ To be able to run source code please execute command below:
 Running on https://0.0.0.0:5003 (CTRL + C to quit)
 ...
 ```
+Then please open [localhost:5003/](http://localhost:5003/) endpoint.
 
 ## Development notes
 
