@@ -13,7 +13,7 @@ th, td {
 }
 
 .delete {
-    background: url("../../img/delete.png") no-repeat top left;
+    background: url("../img/delete.png") no-repeat top left;
     border: none;
     cursor: pointer;
     width: 20px;
