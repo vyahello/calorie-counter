@@ -57,7 +57,15 @@ To be able to run source code please execute command below:
 Running on https://0.0.0.0:5003 (CTRL + C to quit)
 ...
 ```
-Then please open [localhost:5003/](http://localhost:5003/) endpoint.
+
+Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
+```bash
+➜ flask run
+Serving Flask app "counter/__main__.py"
+...
+```
+
+For both cases, then please open [localhost:5003/](http://localhost:5003/) endpoint.
 
 ## Development notes
 
@@ -73,7 +81,7 @@ To be able to run code analysis, please execute command below:
 
 ### Release notes
 
-* 0.0.1
+* 0.1.0
   * Introduce PYPI package
 
 ### Meta
