@@ -1,1 +1,1 @@
-web: gunicorn counter/__main__:application
+web: gunicorn counter:application
