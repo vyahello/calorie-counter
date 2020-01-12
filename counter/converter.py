@@ -10,6 +10,5 @@ def csv_to_json(name: str) -> str:
         for row in DictReader(file):
             item = row["Item"].split("(")[0].strip()
             size = row["Serving Size"].rstrip(")").replace("(", "/ ")
-            key = f"{item} [{size}]"
-            result[key] = row["Calories"]
+            result[f"{item} [{size}]"] = row["Calories"]
         return dumps(result)
