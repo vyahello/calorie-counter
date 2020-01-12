@@ -17,10 +17,13 @@
 > This project represents simple web app to calculate calories based on given food type.
 
 ## Tools
-- html5
-- css3
-- javascript (vanilla)
-- python 3.6 | 3.7 | 3.8
+- front-end
+  - html5
+  - css3
+  - javascript (vanilla)
+- back-end
+  - python 3.6 | 3.7 | 3.8
+  - [flask](http://flask.palletsprojects.com)
 - code analysis
   - [pytest](https://pypi.org/project/pytest/)
   - [mypy](http://mypy.readthedocs.io/en/latest)

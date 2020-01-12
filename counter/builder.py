@@ -9,6 +9,7 @@ def build_food_wrapper(filename: str = "static/js/food.json", data_from: str = "
 
 class Bind:
     """Bind address builder."""
+
     delimiter: str = ":"
 
     def __init__(self, address: str) -> None:
