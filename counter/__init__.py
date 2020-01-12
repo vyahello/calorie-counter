@@ -2,7 +2,7 @@ from flask import Flask
 from counter.builder import Bind
 from counter.view import home
 
-__all__ = ("__version__", "__author__", "easyrun")
+__all__ = ("__version__", "__author__", "easyrun", "Bind")
 __version__: str = "0.0.1"
 __author__: str = "Volodymyr Yahello"
 

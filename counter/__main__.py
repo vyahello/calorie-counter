@@ -1,7 +1,6 @@
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter, _SubParsersAction
 from typing import Dict, NamedTuple, Any
-from counter.builder import Bind
-from counter import easyrun
+from counter import Bind, easyrun
 
 
 class _Arguments(NamedTuple):

@@ -5,7 +5,7 @@ python:
   - "3.8"
 before_install:
   - pip install pip -U
-  - pip install -r requirements.txt -U
+  - pip install -r requirements-dev.txt -U
 script:
     - ./analyse-code.sh
 after_success:

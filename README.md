@@ -10,6 +10,9 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/vyahello/calorie-counter.svg)](https://GitHub.com/vyahello/calorie-counter/graphs/contributors/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 
+[![PyPI version shields.io](https://img.shields.io/pypi/v/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
+
 # Calorie counter
 > This project represents simple web app to calculate calories based on given food type.
 
@@ -25,6 +28,30 @@
 
 ## Usage
 
+### PYPI
+
+Please run following script to obtain latest package from PYPI:
+```bash
+➜ pip install calorie-counter
+```
+Then please execute instructions below to launch game from your environment:
+```python
+from counter import Bind, easyrun
+
+easyrun(bind=Bind("0.0.0.0:5003"), debug=True)
+Running on https://0.0.0.0:5003 (CTRL + C to quit)
+...
+```
+
+### Source code
+
+To be able to run source code please execute command below:
+```bash
+➜ python -m counter run --bind 0.0.0.0:5003 --debug
+Running on https://0.0.0.0:5003 (CTRL + C to quit)
+...
+```
+
 ## Development notes
 
 ### CI
@@ -36,6 +63,11 @@ To be able to run code analysis, please execute command below:
 ```bash
 ➜ ./analyse-code.sh
 ```
+
+### Release notes
+
+* 0.0.1
+  * Introduce PYPI package
 
 ### Meta
 
@@ -52,4 +84,5 @@ You can reach out me at:
 1. clone the repository
 2. configure Git for the first time after cloning with your `name` and `email`
 3. `pip install -r requirements.txt` to install all project dependencies
+4. `pip install -r requirements-dev.txt` to install all dev project dependencies
 
