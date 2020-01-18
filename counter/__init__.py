@@ -3,7 +3,7 @@ from counter.builder import Bind
 from counter.view import home
 
 __all__ = ("__version__", "__author__", "easyrun", "application", "Bind")
-__version__: str = "0.0.1"
+__version__: str = "0.1.3"
 __author__: str = "Volodymyr Yahello"
 
 application: Flask = Flask(__name__)

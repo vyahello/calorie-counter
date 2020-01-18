@@ -16,7 +16,7 @@ def _requirements() -> Sequence[str]:
 
 setup(
     name="calorie-counter",
-    version="0.1.2",
+    version="0.1.3",
     author="Volodymyr Yahello",
     author_email="vyahello@gmail.com",
     description="This project represents simple web app to calculate calories based on given food type.",

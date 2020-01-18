@@ -1,5 +1,5 @@
-from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter, _SubParsersAction
-from typing import Dict, NamedTuple, Any
+from typing import NamedTuple, Any
+import click
 from counter import Bind, easyrun
 
 
@@ -8,44 +8,23 @@ class _Arguments(NamedTuple):
 
     bind: Bind
     debug: bool
-    command: str
 
 
-def _arguments() -> _Arguments:
+def _arguments(*user_params: Any) -> _Arguments:
     """Returns list of user's arguments."""
-    analytics_parser: ArgumentParser = ArgumentParser(
-        description="The program allows to manipulate with calorie counter app",
-        formatter_class=ArgumentDefaultsHelpFormatter,
-    )
-    sub_parsers: _SubParsersAction = analytics_parser.add_subparsers(
-        description="A list of allowed options for manipulation with calorie counter app.",
-        help="It is allowed only to run calorie counter app.",
-    )
-    run_parser: ArgumentParser = sub_parsers.add_parser(name="run", help="Runs calorie counter app.")
-    run_parser.set_defaults(command="run")
-    run_parser.add_argument(
-        "--bind",
-        "-b",
-        action="store",
-        help="Socket address to launch app on e.g '0.0.0.0:5001'",
-        type=str,
-        default="0.0.0.0:5001",
-    )
-    run_parser.add_argument(
-        "--debug", "-d", action="store_true", help="Enable or disable debug option", default=False,
-    )
-    command_line_input: Dict[str, Any] = vars(analytics_parser.parse_args())
-    if not command_line_input:
-        analytics_parser.print_help()
-        analytics_parser.exit(1)
-    command_line_input["bind"] = Bind(command_line_input["bind"])
-    return _Arguments(**command_line_input)
+    return _Arguments(*user_params)
 
 
-def _run_calorie_counter_app(arguments: _Arguments) -> None:
-    """Runs weather app."""
+@click.command()
+@click.option(
+    "--bind", "-b", default="0.0.0.0:5001", show_default=True, help="Socket address to launch app on e.g '0.0.0.0:5001'"
+)
+@click.option("--debug", "-d", default=False, show_default=True, is_flag=True, help="Enable or disable debug option")
+def _count_calorie_app(bind: str, debug: bool) -> None:
+    """The program allows to manipulate with calorie counter app."""
+    arguments = _arguments(Bind(bind), debug)
     easyrun(bind=arguments.bind, debug=arguments.debug)
 
 
 if __name__ == "__main__":
-    _run_calorie_counter_app(_arguments())
+    _count_calorie_app()
