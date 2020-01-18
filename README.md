@@ -55,7 +55,7 @@ Then please open [localhost:5003/](http://localhost:5003/) endpoint.
 
 To be able to run source code please execute command below:
 ```bash
-➜ python -m counter run --bind 0.0.0.0:5003 --debug
+➜ python -m counter --bind 0.0.0.0:5003 --debug
 Running on https://0.0.0.0:5003 (CTRL + C to quit)
 ...
 ```
@@ -83,6 +83,8 @@ To be able to run code analysis, please execute command below:
 
 ### Release notes
 
+* 0.1.3
+  * Use click CLI tool
 * 0.1.2
   * Add metainfo into home page
 * 0.1.0
