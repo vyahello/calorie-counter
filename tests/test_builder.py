@@ -13,3 +13,7 @@ def test_host(bind: Bind) -> None:
 
 def test_port(bind: Bind) -> None:
     assert bind.port == 5001
+
+
+def test_delimiter(bind: Bind) -> None:
+    assert bind.delimiter == ":"

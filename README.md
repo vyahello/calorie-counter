@@ -63,7 +63,7 @@ Running on https://0.0.0.0:5003 (CTRL + C to quit)
 Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
 ```bash
 ➜ flask run
-Serving Flask app "counter/__main__.py"
+Serving Flask app "counter.py"
 ...
 ```
 
