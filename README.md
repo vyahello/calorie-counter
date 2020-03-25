@@ -1,6 +1,5 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
-
 [![Build Status](https://travis-ci.org/vyahello/calorie-counter.svg?branch=master)](https://travis-ci.org/vyahello/calorie-counter)
 [![Coverage Status](https://coveralls.io/repos/github/vyahello/calorie-counter/badge.svg?branch=master)](https://coveralls.io/github/vyahello/calorie-counter?branch=master)
 [![Forks](https://img.shields.io/github/forks/vyahello/calorie-counter)](https://github.com/vyahello/calorie-counter/network/members)
@@ -9,16 +8,15 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/vyahello/calorie-counter.svg)](https://GitHub.com/vyahello/calorie-counter/graphs/watchers/)
 [![GitHub contributors](https://img.shields.io/github/contributors/vyahello/calorie-counter.svg)](https://GitHub.com/vyahello/calorie-counter/graphs/contributors/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-
 [![PyPI version shields.io](https://img.shields.io/pypi/v/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
 
 # Calorie counter
-> This project represents simple web app to calculate calories based on given food type. 
+> This project represents a simple web app to calculate calories based on given food type. 
 >
 > Please check https://food-calories-counter.herokuapp.com get familiar with application itself.
->
-> ![Screenshot](counter/static/img/page.png)
+
+![Screenshot](counter/static/img/page.png)
 
 ## Tools
 - front-end
@@ -35,7 +33,7 @@
 
 ## Usage
 
-### PYPI
+### Quick start
 
 Please run following script to obtain latest package from PYPI:
 ```bash
@@ -67,7 +65,7 @@ Serving Flask app "counter.py"
 ...
 ```
 
-For both cases, then please open [localhost:5003/](http://localhost:5003/) endpoint.
+Then please open [localhost:5003/](http://localhost:5003/) endpoint.
 
 ## Development notes
 
