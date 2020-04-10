@@ -10,13 +10,12 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![PyPI version shields.io](https://img.shields.io/pypi/v/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
+[![CodeFactor](https://www.codefactor.io/repository/github/vyahello/calorie-counter/badge)](https://www.codefactor.io/repository/github/vyahello/calorie-counter)
 
 # Calorie counter
 > This project represents a simple web app to calculate calories based on given food type. 
 >
 > Please check https://food-calories-counter.herokuapp.com get familiar with application itself.
-
-![Screenshot](counter/static/img/page.png)
 
 ## Tools
 - front-end
@@ -33,11 +32,13 @@
 
 ## Usage
 
+![Usage](howto.gif)
+
 ### Quick start
 
 Please run following script to obtain latest package from PYPI:
 ```bash
-➜ pip install calorie-counter
+pip install calorie-counter
 ```
 Then please execute instructions below to launch game from your environment:
 ```python
@@ -53,16 +54,12 @@ Then please open [localhost:5003/](http://localhost:5003/) endpoint.
 
 To be able to run source code please execute command below:
 ```bash
-➜ python -m counter --bind 0.0.0.0:5003 --debug
-Running on https://0.0.0.0:5003 (CTRL + C to quit)
-...
+python -m counter --bind 0.0.0.0:5003 --debug
 ```
 
 Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
 ```bash
-➜ flask run
-Serving Flask app "counter.py"
-...
+flask run
 ```
 
 Then please open [localhost:5003/](http://localhost:5003/) endpoint.
@@ -76,7 +73,7 @@ after every made change to the repository.
 
 To be able to run code analysis, please execute command below:
 ```bash
-➜ ./analyse-code.sh
+./analyse-code.sh
 ```
 
 ### Release notes
@@ -90,7 +87,7 @@ To be able to run code analysis, please execute command below:
 
 ### Meta
 
-Author – Volodymyr Yahello
+Author – _Volodymyr Yahello_
 
 Distributed under the `MIT` license. See [LICENSE](LICENSE.md) for more information.
 

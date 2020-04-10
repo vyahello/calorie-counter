@@ -1,3 +1,2 @@
-graft counter/static
-graft counter/templates
 global-exclude *.pyc
+recursive-include counter *.txt *.html *.css
