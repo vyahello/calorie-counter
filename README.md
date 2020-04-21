@@ -29,6 +29,7 @@
   - [pytest](https://pypi.org/project/pytest/)
   - [mypy](http://mypy.readthedocs.io/en/latest)
   - [black](https://black.readthedocs.io/en/stable/)
+  - [travis](https://travis-ci.org) CI
 
 ## Usage
 
