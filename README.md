@@ -36,6 +36,10 @@
 
 ### Quick start
 
+Please open https://food-calories-counter.herokuapp.com web site to check out an application.
+
+### PYPI
+
 Please run following script to obtain latest package from PYPI:
 ```bash
 pip install calorie-counter
@@ -45,7 +49,6 @@ Then please execute instructions below to launch game from your environment:
 from counter import Bind, easyrun
 
 easyrun(bind=Bind("0.0.0.0:5003"), debug=True)
-Running on https://0.0.0.0:5003 (CTRL + C to quit)
 ...
 ```
 Then please open [localhost:5003/](http://localhost:5003/) endpoint.
