@@ -12,7 +12,7 @@ def index() -> str:
     return render_template("index.html")
 
 
-@blueprint.errorhandler(404)
+@blueprint.errorhandler(code_or_exception=404)
 def not_found() -> Response:
     """Returns page not found."""
     return Response("The page was not found", status=404)

@@ -24,4 +24,7 @@ def setup_data() -> None:
 
 
 def test_csv_to_json() -> None:
-    assert csv_to_json(_path) == '{"Egg McMuffin [4.8 oz / 136 g]": "300", "Egg White Delight [4.8 oz / 135 g]": "250"}'
+    assert (
+        csv_to_json(_path)
+        == '{"Egg McMuffin [4.8 oz / 136 g]": "300", "Egg White Delight [4.8 oz / 135 g]": "250"}'
+    )
