@@ -20,8 +20,8 @@ class Bind:
 
     @property
     def host(self) -> str:
-        return self._address.split(":")[0]
+        return self._address.split(self.delimiter)[0]
 
     @property
     def port(self) -> int:
-        return int(self._address.split(":")[1])
+        return int(self._address.split(self.delimiter)[1])
