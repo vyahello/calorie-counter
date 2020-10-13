@@ -1,3 +1,5 @@
+![Screenshot](media/logo.png)
+
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![Build Status](https://travis-ci.org/vyahello/calorie-counter.svg?branch=master)](https://travis-ci.org/vyahello/calorie-counter)
@@ -26,7 +28,7 @@
 
 ## Usage
 
-![Usage](howto.gif)
+![Usage](media/howto.gif)
 
 ### Quick start
 
@@ -45,7 +47,7 @@ from counter import Bind, easyrun
 easyrun(bind=Bind("0.0.0.0:5003"), debug=True)
 ...
 ```
-Then please open [localhost:5003/](http://localhost:5003/) endpoint.
+Then please open [localhost:5003](http://localhost:5003) endpoint.
 
 ### Source code
 
@@ -59,7 +61,7 @@ Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) confi
 flask run
 ```
 
-Then please open [localhost:5003/](http://localhost:5003/) endpoint.
+Then please open [localhost:5003](http://localhost:5003) endpoint.
 
 ## Development notes
 
@@ -81,7 +83,7 @@ Please check [changelog](CHANGELOG.md) file to get more details about actual ver
 
 Author – _Volodymyr Yahello_
 
-Distributed under the `MIT` license. See [LICENSE](LICENSE.md) for more information.
+Distributed under the `MIT` license. See [license](LICENSE.md) for more information.
 
 You can reach out me at:
 * [vyahello@gmail.com](vyahello@gmail.com)
