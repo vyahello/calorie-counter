@@ -1,5 +1,6 @@
 from typing import IO, Sequence
 from setuptools import setup, find_packages
+from counter import __author__, __email__, __package_name__, __version__
 
 
 def _description() -> str:
@@ -16,12 +17,12 @@ def _requirements() -> Sequence[str]:
 
 if __name__ == "__main__":
     setup(
-        name="calorie-counter",
-        version="0.1.3",
-        author="Volodymyr Yahello",
-        author_email="vyahello@gmail.com",
+        name=__package_name__,
+        version=__version__,
+        author=__author__,
+        author_email=__email__,
         description=(
-            "This project represents simple web app to "
+            "This project represents a simple web app to "
             "calculate calories based on given food type."
         ),
         long_description=_description(),
