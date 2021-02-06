@@ -13,18 +13,21 @@
 > This project represents a simple web app to calculate calories based on given food type. 
 
 ## Tools
+
+### Production
 - front-end
   - html5
   - css3
   - javascript (vanilla)
 - back-end
-  - python 3.6 | 3.7 | 3.8
+  - python 3.6, 3.7, 3.8
   - [flask](http://flask.palletsprojects.com)
-- code analysis
-  - [pytest](https://pypi.org/project/pytest/)
-  - [mypy](http://mypy.readthedocs.io/en/latest)
-  - [black](https://black.readthedocs.io/en/stable/)
-  - [travis](https://travis-ci.org) CI
+
+### Development
+- [pytest](https://pypi.org/project/pytest/)
+- [mypy](http://mypy.readthedocs.io/en/latest)
+- [black](https://black.readthedocs.io/en/stable/)
+- [travis](https://travis-ci.org) CI
 
 ## Usage
 
@@ -34,7 +37,7 @@
 
 Please open [web site](https://food-calories-counter.herokuapp.com) to check out an application.
 
-### PYPI
+### Installation
 
 Please run following script to obtain latest package from PYPI:
 ```bash
@@ -44,10 +47,9 @@ Then please execute instructions below to launch game from your environment:
 ```python
 from counter import Bind, easyrun
 
-easyrun(bind=Bind("0.0.0.0:5003"), debug=True)
-...
+easyrun(Bind("0.0.0.0:5003"))
 ```
-Then please open [localhost:5003](http://localhost:5003) endpoint.
+Then please open [localhost:5003](http://localhost:5003) endpoint in your browser.
 
 ### Source code
 
@@ -61,7 +63,7 @@ Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) confi
 flask run
 ```
 
-Then please open [localhost:5003](http://localhost:5003) endpoint.
+Then please open [localhost:5003](http://localhost:5003) endpoint in your browser.
 
 ## Development notes
 
