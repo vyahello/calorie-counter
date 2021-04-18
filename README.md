@@ -7,6 +7,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![PyPI version shields.io](https://img.shields.io/pypi/v/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
+[![PyPi downloads](https://img.shields.io/pypi/dm/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/calorie-counter/badge)](https://www.codefactor.io/repository/github/vyahello/calorie-counter)
 
 # Calorie counter
