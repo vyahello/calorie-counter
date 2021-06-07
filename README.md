@@ -46,9 +46,9 @@ pip install calorie-counter
 ```
 Then please execute instructions below to launch game from your environment:
 ```python
-from counter import Bind, easyrun
-
-easyrun(Bind("0.0.0.0:5003"))
+>>> from counter import Bind, easyrun
+>>> 
+>>> easyrun(Bind("0.0.0.0:5003"))
 ```
 Then please open [localhost:5003](http://localhost:5003) endpoint in your browser.
 
