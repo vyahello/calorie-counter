@@ -2,7 +2,7 @@
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
-[![Build Status](https://travis-ci.org/vyahello/calorie-counter.svg?branch=master)](https://travis-ci.org/vyahello/calorie-counter)
+[![Build Status](https://api.travis-ci.com/vyahello/calorie-counter.svg?branch=master)](https://www.travis-ci.com/github/vyahello/calorie-counter)
 [![Coverage Status](https://coveralls.io/repos/github/vyahello/calorie-counter/badge.svg?branch=master)](https://coveralls.io/github/vyahello/calorie-counter?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![PyPI version shields.io](https://img.shields.io/pypi/v/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
