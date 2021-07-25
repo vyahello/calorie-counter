@@ -9,6 +9,7 @@
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter/)
 [![PyPi downloads](https://img.shields.io/pypi/dm/calorie-counter.svg)](https://pypi.python.org/pypi/calorie-counter)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/calorie-counter/badge)](https://www.codefactor.io/repository/github/vyahello/calorie-counter)
+[![Docker pulls](https://img.shields.io/docker/pulls/vyahello/calorie-counter.svg)](https://hub.docker.com/repository/docker/vyahello/calorie-counter)
 
 # Calorie counter
 > This project represents a simple web app to calculate calories based on given food type. 
@@ -38,7 +39,16 @@
 
 Please open [web site](https://food-calories-counter.herokuapp.com) to check out an application.
 
-### Installation
+### Docker run
+
+Please use the following command to run app via docker:
+```bash
+docker run -it -p 4000:5001 vyahello/calorie-counter:0.1.0 counter
+```
+
+Then please browse for http://0.0.0.0:4000 endpoint.
+
+### PYPI Installation
 
 Please run following script to obtain latest package from PYPI:
 ```bash
@@ -76,6 +86,24 @@ after every made change to the repository.
 To be able to run code analysis, please execute command below:
 ```bash
 ./analyse-code.sh
+```
+
+### Build docker images
+
+To build base image please run the following command:
+```bash
+docker build --no-cache -t vyahello/calorie-counter:0.1.0 -f docker/Dockerfile .
+```
+
+To build main image please run the following command:
+
+```bash
+docker build --no-cache -t vyahello/calorie-counter:test -f docker/Dockerfile --build-arg VERSION=0.1.0 .
+```
+
+Please use the following commands to push image:
+```bash
+docker push vyahello/calorie-counter:test
 ```
 
 ### Release notes
