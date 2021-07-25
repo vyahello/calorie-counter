@@ -25,7 +25,7 @@ counter() {
 :<<DOC
     Entrypoint to launch 'counter' web application
 DOC
-    python -m counter --bind 0.0.0.0:${SERVER_PORT}
+    python -m flask run
 }
 
 

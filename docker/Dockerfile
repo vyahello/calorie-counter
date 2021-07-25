@@ -8,7 +8,7 @@ ENV CODE_DIR="/app" \
     IMAGE_VERSION=${VERSION}
 WORKDIR ${CODE_DIR}
 COPY counter counter
-COPY requirements.txt docker/docker-entry.sh ./
+COPY requirements.txt .flaskenv docker/docker-entry.sh ./
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt && \
     rm -v requirements.txt
