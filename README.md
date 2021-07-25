@@ -71,6 +71,7 @@ python -m counter --bind 0.0.0.0:5003 --debug
 
 Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
 ```bash
+export FLASK_APP=counter
 flask run
 ```
 
