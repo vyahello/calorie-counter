@@ -48,6 +48,26 @@ docker run -it -p 4000:5001 vyahello/calorie-counter:0.1.0 counter
 
 Then please browse for http://0.0.0.0:4000 endpoint.
 
+### Source code
+
+To be able to run source code please execute command below:
+```bash
+git clone git@github.com:vyahello/calorie-counter.git
+cd calorie-counter
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+python -m counter --bind 0.0.0.0:5003 --debug
+```
+
+Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
+```bash
+export FLASK_APP=counter
+flask run
+```
+
+Then please open [localhost:5003](http://localhost:5003) endpoint in your browser.
+
 ### PYPI Installation
 
 Please run following script to obtain latest package from PYPI:
@@ -60,21 +80,6 @@ Then please execute instructions below to launch game from your environment:
 >>> 
 >>> easyrun(Bind("0.0.0.0:5003"))
 ```
-Then please open [localhost:5003](http://localhost:5003) endpoint in your browser.
-
-### Source code
-
-To be able to run source code please execute command below:
-```bash
-python -m counter --bind 0.0.0.0:5003 --debug
-```
-
-Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
-```bash
-export FLASK_APP=counter
-flask run
-```
-
 Then please open [localhost:5003](http://localhost:5003) endpoint in your browser.
 
 ## Development notes
