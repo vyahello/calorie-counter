@@ -35,18 +35,18 @@
 
 ![Usage](media/howto.gif)
 
+Please check out app via:
+  - https://food-calories-counter.herokuapp.com (prod stage)
+  - http://178.62.222.165:5002 (test stage)
+
 ### Quick start
-
-Please open [web site](https://food-calories-counter.herokuapp.com) to check out an application.
-
-### Docker run
 
 Please use the following command to run app via docker:
 ```bash
-docker run -it -p 4000:5001 vyahello/calorie-counter:0.1.0 counter
+docker run -it -p 5001:5001 vyahello/calorie-counter:0.1.0 counter
 ```
 
-Then please browse for http://0.0.0.0:4000 endpoint.
+Then please browse for http://0.0.0.0:5001 endpoint.
 
 ### Source code
 
@@ -57,7 +57,7 @@ cd calorie-counter
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
-python -m counter --bind 0.0.0.0:5003 --debug
+python -m counter --bind 0.0.0.0:5001 --debug
 ```
 
 Also you can use **flask** built-in runner based on [.flaskenv](.flaskenv) config file: 
