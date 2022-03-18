@@ -33,11 +33,11 @@
 
 ## Usage
 
-![Usage](media/howto.gif)
-
 Please check out app via:
-  - https://food-calories-counter.herokuapp.com (prod stage)
+  - https://food-calories-counter.herokuapp1.com (prod stage)
   - http://178.62.222.165:5002 (test stage)
+
+![Usage](media/howto.gif)
 
 ### Quick start
 
